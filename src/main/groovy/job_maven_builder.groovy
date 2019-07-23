@@ -39,7 +39,7 @@ folder('git-maven-folder') {
     new MavenJobBuilder()
             .jobName("Maven Job")
             .description("simple maven job builder")
-            .gitUrl("https://github.com/mixerekt/testing-job-repo.git")
+            .gitUrl("https://github.com/mixerekt/maven-job-dsl.git")
             .branchName("master")
             .credentialsId("c69356b9-e9d8-46d6-b2d6-0fe73f49d2e4")
             .numToKeep(10)
