@@ -22,7 +22,7 @@ class MavenJobBuilder {
                     remote {
                         name("origin")
                         url(gitUrl)
-                        credentialsId(this.credentialsId)
+                        credentials(this.credentialsId)
                     }
                     branch(branchName)
                 }
