@@ -31,3 +31,17 @@ class MavenJobBuilder {
         }
     }
 }
+
+folder('git-maven-folder') {
+    description('This is folder for maven builder')
+}
+
+def builder = new MavenJobBuilder(jobName: "Maven Job",
+        description: "simple maven job builder",
+        gitUrl: "",
+        branchName: "master",
+        credentialsId: "",
+        numToKeep: 10,
+        daysToKeep: 20)
+
+builder.build(this)
