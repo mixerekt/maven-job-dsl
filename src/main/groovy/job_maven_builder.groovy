@@ -38,9 +38,9 @@ folder('git-maven-folder') {
 
 def builder = new MavenJobBuilder(jobName: "Maven Job",
         description: "simple maven job builder",
-        gitUrl: "",
+        gitUrl: "https://github.com/mixerekt/testing-job-repo.git",
         branchName: "master",
-        credentialsId: "",
+        credentialsId: "c69356b9-e9d8-46d6-b2d6-0fe73f49d2e4",
         numToKeep: 10,
         daysToKeep: 20)
 
